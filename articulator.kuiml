@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SKIN> 
+  <LAYER_STACK width="500" height="700">
+    <ROW spacing="5">
+    
+      <COLUMN>
+        <ROW>
+          <COLUMN>
+            <TEXT value="MIDI Channel" font_size="13" font_weight="bold" />
+          </COLUMN>
+          <COLUMN>
+            <TEXT value="KS Octave" font_size="13" font_weight="bold" />
+          </COLUMN>
+          <COLUMN>
+            <TEXT value="KS Note" font_size="13" font_weight="bold" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="1" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param0" />
+            <PARAM_TEXT param_id="custom_param0" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param1" />
+            <PARAM_TEXT param_id="custom_param1" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="2" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param2" />
+            <PARAM_TEXT param_id="custom_param2" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param3" />
+            <PARAM_TEXT param_id="custom_param3" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="3" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param4" />
+            <PARAM_TEXT param_id="custom_param4" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param5" />
+            <PARAM_TEXT param_id="custom_param5" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="4" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param6" />
+            <PARAM_TEXT param_id="custom_param6" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param7" />
+            <PARAM_TEXT param_id="custom_param7" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="5" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param8" />
+            <PARAM_TEXT param_id="custom_param8" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param9" />
+            <PARAM_TEXT param_id="custom_param9" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="6" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param10" />
+            <PARAM_TEXT param_id="custom_param10" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param11" />
+            <PARAM_TEXT param_id="custom_param11" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="7" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param12" />
+            <PARAM_TEXT param_id="custom_param12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param13" />
+            <PARAM_TEXT param_id="custom_param13" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="8" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param14" />
+            <PARAM_TEXT param_id="custom_param14" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param15" />
+            <PARAM_TEXT param_id="custom_param15" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+      </COLUMN>
+    
+      <COLUMN>
+        <ROW>
+          <COLUMN>
+            <TEXT value="MIDI Channel" font_size="13" font_weight="bold" />
+          </COLUMN>
+          <COLUMN>
+            <TEXT value="KS Octave" font_size="13" font_weight="bold" />
+          </COLUMN>
+          <COLUMN>
+            <TEXT value="KS Note" font_size="13" font_weight="bold" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="9" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param16" />
+            <PARAM_TEXT param_id="custom_param16" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param17" />
+            <PARAM_TEXT param_id="custom_param17" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="10" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param18" />
+            <PARAM_TEXT param_id="custom_param18" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param19" />
+            <PARAM_TEXT param_id="custom_param19" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="11" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param20" />
+            <PARAM_TEXT param_id="custom_param20" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param21" />
+            <PARAM_TEXT param_id="custom_param21" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="12" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param22" />
+            <PARAM_TEXT param_id="custom_param22" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param23" />
+            <PARAM_TEXT param_id="custom_param23" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="13" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param24" />
+            <PARAM_TEXT param_id="custom_param24" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param25" />
+            <PARAM_TEXT param_id="custom_param25" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="14" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param26" />
+            <PARAM_TEXT param_id="custom_param26" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param27" />
+            <PARAM_TEXT param_id="custom_param27" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="15" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param28" />
+            <PARAM_TEXT param_id="custom_param28" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param29" />
+            <PARAM_TEXT param_id="custom_param29" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="16" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param30" />
+            <PARAM_TEXT param_id="custom_param30" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param31" />
+            <PARAM_TEXT param_id="custom_param31" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      
+      </COLUMN>
+    
+    </ROW>
+  </LAYER_STACK>
+</SKIN>

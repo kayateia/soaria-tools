@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SKIN> 
+  <LAYER_STACK width="500" height="700">
+    <ROW spacing="5">
+    {% for col in range(0, 2) %}
+      <COLUMN>
+        <ROW>
+          <COLUMN>
+            <TEXT value="MIDI Channel" font_size="13" font_weight="bold" />
+          </COLUMN>
+          <COLUMN>
+            <TEXT value="KS Octave" font_size="13" font_weight="bold" />
+          </COLUMN>
+          <COLUMN>
+            <TEXT value="KS Note" font_size="13" font_weight="bold" />
+          </COLUMN>
+        </ROW>
+      {% for row in range(0 + col*8, 8 + col*8) %}
+        <ROW spacing="5">
+          <COLUMN>
+            <TEXT value="{{ row + 1 }}" font_size="12" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_ORANGE_FLAT_KNOB param_id="custom_param{{ row*2 + 0 }}" />
+            <PARAM_TEXT param_id="custom_param{{ row*2 + 0 }}" />
+          </COLUMN>
+          <COLUMN>
+            <PNS_GREEN_FLAT_KNOB param_id="custom_param{{ row*2 + 1 }}" />
+            <PARAM_TEXT param_id="custom_param{{ row*2 + 1 }}" value_format=".0" />
+          </COLUMN>
+        </ROW>
+      {% endfor %}
+      </COLUMN>
+    {% endfor %}
+    </ROW>
+  </LAYER_STACK>
+</SKIN>
