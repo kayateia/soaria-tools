@@ -49,25 +49,36 @@ MidiEvent tempEvent; ///< defining temp object in the script to avoid allocation
 void processEvent(BlockData& data, const MidiEvent& event) {
     MidiEventType type = MidiEventUtils::getType(event);
     if (type == kMidiNoteOn) {
+        // We have to "sandwich" the original event like this because some
+        // sample libraries use these as momentaries.
         uint8 channel = MidiEventUtils::getChannel(event) - 1;
         int8 ksNote = channelOctaves[channel] * 12 + channelNotes[channel];
 
+        // Push the ks note-on.
         tempEvent = event;
         MidiEventUtils::setChannel(tempEvent, 1);
         MidiEventUtils::setNote(tempEvent, ksNote);
         //printEvent("sending ksOn", tempEvent);
         //print("That was ksNote " + (ksNote / 12) + "/" + (ksNote % 12));
         data.outputMidiEvents.push(tempEvent);
+
+        // Push the original event.
+        tempEvent = event;
+        MidiEventUtils::setChannel(tempEvent, 1);
+        data.outputMidiEvents.push(tempEvent);
+
+        // And the ks note-off.
+        MidiEventUtils::setNote(tempEvent, ksNote);
         MidiEventUtils::setType(tempEvent, kMidiNoteOff);
         //printEvent("sending ksOff", tempEvent);
         data.outputMidiEvents.push(tempEvent);
+    } else {
+        tempEvent = event;
+        MidiEventUtils::setChannel(tempEvent, 1);
+        //printEvent("sending other", tempEvent);
+        //print("That was note " + MidiEventUtils::getNote(tempEvent));
+        data.outputMidiEvents.push(tempEvent);
     }
-
-    tempEvent = event;
-    MidiEventUtils::setChannel(tempEvent, 1);
-    //printEvent("sending other", tempEvent);
-    //print("That was note " + MidiEventUtils::getNote(tempEvent));
-    data.outputMidiEvents.push(event);
 }
 
 /* per-block processing function: called for every block with updated parameters values.
