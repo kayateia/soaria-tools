@@ -24,7 +24,7 @@ void initialize() {
 }
 
 // local variables
-uint8 ccNumber;
+uint8 ccNumberExpected;
 MidiEvent tempEvent; ///< defining temp object in the script to avoid allocations in time-critical processBlock function
 
 /*void printEvent(const string& message, const MidiEvent& event) {
@@ -36,7 +36,7 @@ void processEvent(BlockData& data, const MidiEvent& event) {
     tempEvent = event;
     if (type == kMidiControlChange) {
         uint8 ccNumber = MidiEventUtils::getCCNumber(event);
-        if (ccNumber == ccNumber) {
+        if (ccNumber == ccNumberExpected) {
             double value = MidiEventUtils::getCCValue(tempEvent);
             value = (value * inputParameters[1]) + inputParameters[2];
             if (value < 0) {
@@ -65,5 +65,5 @@ void processBlock(BlockData& data) {
 *
 */
 void updateInputParametersForBlock(const TransportInfo@ info) {
-    ccNumber = KittyDSP::Utils::roundDoubleToInt(inputParameters[0]);
+    ccNumberExpected = KittyDSP::Utils::roundDoubleToInt(inputParameters[0]);
 }
